@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mavoro — a private society for explorers who travel with intention. Rare journeys, cultural immersion, and stories that become part of you.">
+  <meta name="keywords" content="luxury travel, private travel club, cultural expeditions, Mavoro Society">
+  <meta name="author" content="Mavoro">
+  <meta property="og:title" content="Mavoro — Travel Beyond Destinations">
+  <meta property="og:description" content="Join a community of explorers who value rare experiences over possessions.">
+  <meta property="og:type" content="website">
+  <title>Mavoro — Travel Beyond Destinations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a href="#opening" class="skip-link">Skip to content</a>
+
+  <!-- Floating Menu Button -->
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+    <span class="menu-btn__ring"></span>
+    <span class="menu-btn__icon">
+      <span></span>
+      <span></span>
+    </span>
+  </button>
+
+  <!-- Full-Screen Navigation Overlay -->
+  <nav class="nav-overlay" id="navOverlay" aria-hidden="true">
+    <div class="nav-overlay__inner">
+      <ul class="nav-overlay__list">
+        <li><a href="#opening" class="nav-link" data-section="opening">Home</a></li>
+        <li><a href="#passport" class="nav-link" data-section="passport">Destinations</a></li>
+        <li><a href="#atlas" class="nav-link" data-section="atlas">Experiences</a></li>
+        <li><a href="#journals" class="nav-link" data-section="journals">Journals</a></li>
+        <li><a href="#membership" class="nav-link" data-section="membership">Membership</a></li>
+        <li><a href="#invitation" class="nav-link" data-section="invitation">Contact</a></li>
+      </ul>
+      <p class="nav-overlay__tagline">Est. MMXXIV — For Those Who Wander Deeply</p>
+    </div>
+  </nav>
+
+  <!-- Scroll-Reveal Brand Mark -->
+  <header class="scroll-brand" id="scrollBrand" aria-hidden="true">
+    <span class="scroll-brand__name">Mavoro</span>
+  </header>
+
+  <main>
+
+    <!-- SECTION 1 — OPENING SPREAD -->
+    <section class="opening-spread" id="opening" aria-label="Opening spread">
+      <div class="opening-spread__photo">
+        <img
+          src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1400&q=80"
+          alt="A winding road through dramatic mountain landscape at golden hour"
+          width="1400"
+          height="900"
+          loading="eager"
+        >
+        <div class="opening-spread__photo-overlay"></div>
+      </div>
+      <div class="opening-spread__editorial">
+        <p class="opening-spread__brand">Mavoro</p>
+        <h1 class="opening-spread__headline">Travel Beyond Destinations</h1>
+        <p class="opening-spread__poem">Some places are visited. Others become part of your story.</p>
+        <a href="#invitation" class="btn-gold">Request Membership</a>
+        <div class="opening-spread__ornament" aria-hidden="true">
+          <svg viewBox="0 0 120 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="4" x2="45" y2="4" stroke="currentColor" stroke-width="0.5"/>
+            <circle cx="60" cy="4" r="3" stroke="currentColor" stroke-width="0.5" fill="none"/>
+            <line x1="75" y1="4" x2="120" y2="4" stroke="currentColor" stroke-width="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2 — THE PASSPORT STRIP -->
+    <section class="passport-strip" id="passport" aria-label="Destination passport stamps">
+      <div class="passport-strip__header">
+        <h2 class="section-label">Collected Stamps</h2>
+        <p class="section-sublabel">Destinations awaiting your arrival</p>
+      </div>
+      <div class="passport-strip__track" role="list">
+        <article class="stamp-card" role="listitem" data-destination="morocco">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Morocco</span>
+            <span class="stamp-card__city">Marrakech</span>
+            <span class="stamp-card__date">Autumn MMXXV</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="stamp-card" role="listitem" data-destination="kyoto">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Kyoto</span>
+            <span class="stamp-card__city">Japan</span>
+            <span class="stamp-card__date">Winter MMXXV</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="stamp-card" role="listitem" data-destination="patagonia">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Patagonia</span>
+            <span class="stamp-card__city">Argentina</span>
+            <span class="stamp-card__date">Spring MMXXVI</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="stamp-card" role="listitem" data-destination="cappadocia">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Cappadocia</span>
+            <span class="stamp-card__city">Turkey</span>
+            <span class="stamp-card__date">Summer MMXXV</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="stamp-card" role="listitem" data-destination="iceland">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Iceland</span>
+            <span class="stamp-card__city">Reykjavík</span>
+            <span class="stamp-card__date">Winter MMXXVI</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="stamp-card" role="listitem" data-destination="zanzibar">
+          <div class="stamp-card__inner">
+            <span class="stamp-card__country">Zanzibar</span>
+            <span class="stamp-card__city">Tanzania</span>
+            <span class="stamp-card__date">Spring MMXXV</span>
+            <div class="stamp-card__border" aria-hidden="true"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — OUR PHILOSOPHY -->
+    <section class="philosophy" id="philosophy" aria-label="Our philosophy">
+      <div class="philosophy__slide philosophy__slide--1" data-philosophy="1">
+        <div class="philosophy__bg" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80')"></div>
+        <h2 class="philosophy__statement">Travel Slowly</h2>
+        <p class="philosophy__detail">Depth over distance. Presence over pace.</p>
+      </div>
+      <div class="philosophy__slide philosophy__slide--2" data-philosophy="2">
+        <div class="philosophy__bg" style="background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=1600&q=80')"></div>
+        <h2 class="philosophy__statement">Collect Stories</h2>
+        <p class="philosophy__detail">Every journey writes a chapter only you can tell.</p>
+      </div>
+      <div class="philosophy__slide philosophy__slide--3" data-philosophy="3">
+        <div class="philosophy__bg" style="background-image: url('https://images.unsplash.com/photo-1476514525535-07fb3b4eae5f?w=1600&q=80')"></div>
+        <h2 class="philosophy__statement">Leave Changed</h2>
+        <p class="philosophy__detail">Return not with souvenirs, but with a wider soul.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — EXPERIENCE ATLAS -->
+    <section class="atlas" id="atlas" aria-label="Experience atlas">
+      <div class="atlas__header">
+        <h2 class="section-label">Experience Atlas</h2>
+        <p class="section-sublabel">Curated journeys across the world</p>
+      </div>
+      <div class="atlas__map-container">
+        <svg class="atlas__map" viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" aria-label="World map with destination markers">
+          <defs>
+            <filter id="mapGlow">
+              <feGaussianBlur stdDeviation="2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- Stylized continent outlines -->
+          <path class="atlas__land" d="M180,120 Q200,80 250,90 Q300,70 340,100 Q380,90 400,130 Q420,160 390,200 Q360,230 320,220 Q280,210 250,190 Q200,180 180,150 Z"/>
+          <path class="atlas__land" d="M220,250 Q260,240 300,260 Q340,280 360,320 Q350,360 310,370 Q270,380 240,350 Q210,320 220,280 Z"/>
+          <path class="atlas__land" d="M480,100 Q520,80 560,90 Q600,85 640,110 Q680,120 700,150 Q720,180 690,210 Q660,230 620,220 Q580,210 550,190 Q500,170 480,140 Z"/>
+          <path class="atlas__land" d="M500,240 Q540,230 580,250 Q620,270 640,310 Q630,350 590,360 Q550,370 520,340 Q490,310 500,270 Z"/>
+          <path class="atlas__land" d="M700,280 Q740,270 780,290 Q820,310 830,350 Q820,390 780,400 Q740,410 710,380 Q680,350 700,310 Z"/>
+          <path class="atlas__land" d="M820,120 Q860,110 900,130 Q940,150 950,190 Q940,230 900,240 Q860,250 830,220 Q800,190 820,150 Z"/>
+          <!-- Grid lines -->
+          <line class="atlas__grid" x1="0" y1="125" x2="1000" y2="125"/>
+          <line class="atlas__grid" x1="0" y1="250" x2="1000" y2="250"/>
+          <line class="atlas__grid" x1="0" y1="375" x2="1000" y2="375"/>
+          <line class="atlas__grid" x1="250" y1="0" x2="250" y2="500"/>
+          <line class="atlas__grid" x1="500" y1="0" x2="500" y2="500"/>
+          <line class="atlas__grid" x1="750" y1="0" x2="750" y2="500"/>
+        </svg>
+
+        <!-- Map Markers -->
+        <button class="atlas__marker" style="--x: 52%; --y: 38%;" data-marker="morocco"
+          aria-label="Morocco — Desert Immersion, 12 days, Autumn">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+        <button class="atlas__marker" style="--x: 78%; --y: 32%;" data-marker="kyoto"
+          aria-label="Kyoto — Temple & Tea Ceremony, 10 days, Winter">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+        <button class="atlas__marker" style="--x: 30%; --y: 72%;" data-marker="patagonia"
+          aria-label="Patagonia — Glacier Trek, 14 days, Spring">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+        <button class="atlas__marker" style="--x: 58%; --y: 35%;" data-marker="cappadocia"
+          aria-label="Cappadocia — Balloon & Cave Dwellings, 8 days, Summer">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+        <button class="atlas__marker" style="--x: 48%; --y: 18%;" data-marker="iceland"
+          aria-label="Iceland — Aurora & Highlands, 9 days, Winter">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+        <button class="atlas__marker" style="--x: 62%; --y: 55%;" data-marker="zanzibar"
+          aria-label="Zanzibar — Spice Islands, 11 days, Spring">
+          <span class="atlas__marker-dot"></span>
+          <span class="atlas__marker-pulse"></span>
+        </button>
+
+        <!-- Marker Info Card -->
+        <div class="atlas__info" id="atlasInfo" role="tooltip" aria-hidden="true">
+          <img class="atlas__info-img" src="" alt="" width="280" height="160">
+          <div class="atlas__info-body">
+            <h3 class="atlas__info-title"></h3>
+            <dl class="atlas__info-meta">
+              <div><dt>Duration</dt><dd class="atlas__info-duration"></dd></div>
+              <div><dt>Experience</dt><dd class="atlas__info-type"></dd></div>
+              <div><dt>Season</dt><dd class="atlas__info-season"></dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5 — PRIVATE JOURNALS -->
+    <section class="journals" id="journals" aria-label="Private travel journals">
+      <div class="journals__header">
+        <h2 class="section-label">Private Journals</h2>
+        <p class="section-sublabel">Excerpts from the society's leather-bound volumes</p>
+      </div>
+      <div class="journals__desk">
+        <article class="journal-page journal-page--1">
+          <h3 class="journal-page__title">Dawn in the Sahara</h3>
+          <p class="journal-page__excerpt">The dunes turned rose before the sun appeared. Our guide poured mint tea into glasses that steamed in the cold desert air. No photograph could hold what the silence contained.</p>
+          <span class="journal-page__author">— E.V., Member since MMXXIII</span>
+        </article>
+        <article class="journal-page journal-page--2">
+          <h3 class="journal-page__title">Winter in Kyoto</h3>
+          <p class="journal-page__excerpt">Snow settled on the temple roof like a blessing. We sat for an hour without speaking, watching the garden breathe. The monk nodded once, and that was enough.</p>
+          <span class="journal-page__author">— M.K., Member since MMXXII</span>
+        </article>
+        <article class="journal-page journal-page--3">
+          <h3 class="journal-page__title">Midnight in Iceland</h3>
+          <p class="journal-page__excerpt">The aurora arrived without announcement — green ribbons unfurling across a sky that had waited all evening. Someone in our circle wept. No one asked why.</p>
+          <span class="journal-page__author">— R.S., Member since MMXXIV</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — MEMBERSHIP CIRCLE -->
+    <section class="membership-circle" id="membership" aria-label="Membership circle">
+      <div class="membership-circle__container">
+        <svg class="membership-circle__connections" viewBox="0 0 600 600" aria-hidden="true">
+          <circle cx="300" cy="300" r="200" class="membership-circle__orbit" fill="none"/>
+          <circle cx="300" cy="300" r="140" class="membership-circle__orbit membership-circle__orbit--inner" fill="none"/>
+        </svg>
+        <div class="membership-circle__center">
+          <h2 class="membership-circle__title">Mavoro Society</h2>
+          <p class="membership-circle__subtitle">Six pillars of intentional travel</p>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 0deg;" data-pillar="expeditions">
+          <span class="membership-circle__node">Expeditions</span>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 60deg;" data-pillar="retreats">
+          <span class="membership-circle__node">Retreats</span>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 120deg;" data-pillar="culture">
+          <span class="membership-circle__node">Culture</span>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 180deg;" data-pillar="gastronomy">
+          <span class="membership-circle__node">Gastronomy</span>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 240deg;" data-pillar="photography">
+          <span class="membership-circle__node">Photography</span>
+        </div>
+        <div class="membership-circle__orbit-item" style="--angle: 300deg;" data-pillar="conservation">
+          <span class="membership-circle__node">Conservation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — MOMENTS GALLERY -->
+    <section class="moments-gallery" id="gallery" aria-label="Moments gallery">
+      <div class="moments-gallery__header">
+        <h2 class="section-label">Collected Moments</h2>
+        <p class="section-sublabel">A curator's archive of rare light</p>
+      </div>
+      <div class="moments-gallery__grid">
+        <figure class="gallery-item gallery-item--tall">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="Mountain lake reflecting peaks at dawn" loading="lazy" width="400" height="600">
+          <figcaption class="gallery-item__caption">First light, Dolomites — 5:47 AM</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=800&q=80" alt="Hot air balloons over Cappadocia valley" loading="lazy" width="800" height="400">
+          <figcaption class="gallery-item__caption">Above the fairy chimneys</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1551632811-561732b1e23d?w=500&q=80" alt="Ancient stone temple in mist" loading="lazy" width="400" height="400">
+          <figcaption class="gallery-item__caption">Temple bells, 4th watch</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--tall">
+          <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&q=80" alt="Northern lights over snowy landscape" loading="lazy" width="400" height="600">
+          <figcaption class="gallery-item__caption">Aurora, hour unknown</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--wide">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80" alt="Desert dunes at sunset" loading="lazy" width="800" height="400">
+          <figcaption class="gallery-item__caption">The long shadow home</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=500&q=80" alt="Traditional market spices in Morocco" loading="lazy" width="400" height="400">
+          <figcaption class="gallery-item__caption">Saffron & memory, Marrakech</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-item--tall">
+          <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&q=80" alt="Ocean waves crashing on rocky coast" loading="lazy" width="400" height="600">
+          <figcaption class="gallery-item__caption">Where the Atlantic remembers</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?w=500&q=80" alt="Tropical beach with palm trees" loading="lazy" width="400" height="400">
+          <figcaption class="gallery-item__caption">Tide line, Zanzibar</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — TESTIMONIAL LETTERS -->
+    <section class="testimonial-letters" id="testimonials" aria-label="Member testimonial letters">
+      <div class="testimonial-letters__header">
+        <h2 class="section-label">Letters from Members</h2>
+        <p class="section-sublabel">Folded notes from distant postboxes</p>
+      </div>
+      <div class="testimonial-letters__desk">
+        <article class="letter" data-letter="1">
+          <button class="letter__fold" aria-expanded="false" aria-controls="letter-content-1">
+            <span class="letter__seal">M</span>
+            <span class="letter__to">To the Society</span>
+            <span class="letter__from">From Alexandria</span>
+          </button>
+          <div class="letter__content" id="letter-content-1" hidden>
+            <p>Dear Mavoro,</p>
+            <p>I have traveled with many clubs, but none understood that the journey begins long before the plane departs. Your curators do not plan trips — they compose experiences. Patagonia changed how I see endurance. Kyoto changed how I see time.</p>
+            <p class="letter__sign">— Alexandra V., London</p>
+          </div>
+        </article>
+        <article class="letter" data-letter="2">
+          <button class="letter__fold" aria-expanded="false" aria-controls="letter-content-2">
+            <span class="letter__seal">M</span>
+            <span class="letter__to">To the Society</span>
+            <span class="letter__from">From James</span>
+          </button>
+          <div class="letter__content" id="letter-content-2" hidden>
+            <p>Dear Mavoro,</p>
+            <p>What struck me most was the company. Fellow members who read maps like novels and silence like music. The Iceland expedition was otherworldly — but it was the fireside conversations that I carry still.</p>
+            <p class="letter__sign">— James H., Edinburgh</p>
+          </div>
+        </article>
+        <article class="letter" data-letter="3">
+          <button class="letter__fold" aria-expanded="false" aria-controls="letter-content-3">
+            <span class="letter__seal">M</span>
+            <span class="letter__to">To the Society</span>
+            <span class="letter__from">From Yuki</span>
+          </button>
+          <div class="letter__content" id="letter-content-3" hidden>
+            <p>Dear Mavoro,</p>
+            <p>I joined seeking escape. I found belonging. The Zanzibar journey was exquisite — spice markets at dawn, dhow sails at dusk — but it was returning home with new eyes that proved the membership's true worth.</p>
+            <p class="letter__sign">— Yuki T., Osaka</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — UPCOMING JOURNEYS -->
+    <section class="upcoming-journeys" id="journeys" aria-label="Upcoming journeys timeline">
+      <div class="upcoming-journeys__header">
+        <h2 class="section-label">Upcoming Journeys</h2>
+        <p class="section-sublabel">The gold route ahead</p>
+      </div>
+      <div class="upcoming-journeys__timeline">
+        <div class="timeline__route" aria-hidden="true">
+          <svg class="timeline__svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path class="timeline__path" d="M 50 60 Q 200 30, 350 60 T 650 60 T 950 60 T 1150 60" fill="none"/>
+          </svg>
+        </div>
+        <article class="timeline__stop" data-stop="1">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <time class="timeline__date" datetime="2026-09">September 2026</time>
+            <h3 class="timeline__destination">Istanbul</h3>
+            <p class="timeline__highlights">Bosphorus at dusk, Ottoman archives, private hammam</p>
+            <span class="timeline__availability timeline__availability--limited">3 places remaining</span>
+          </div>
+        </article>
+        <article class="timeline__stop" data-stop="2">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <time class="timeline__date" datetime="2026-11">November 2026</time>
+            <h3 class="timeline__destination">Kyoto</h3>
+            <p class="timeline__highlights">Autumn temples, kaiseki with masters, bamboo forest dawn</p>
+            <span class="timeline__availability timeline__availability--open">6 places available</span>
+          </div>
+        </article>
+        <article class="timeline__stop" data-stop="3">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <time class="timeline__date" datetime="2027-03">March 2027</time>
+            <h3 class="timeline__destination">Bhutan</h3>
+            <p class="timeline__highlights">Tiger's Nest pilgrimage, festival masks, valley homestays</p>
+            <span class="timeline__availability timeline__availability--limited">2 places remaining</span>
+          </div>
+        </article>
+        <article class="timeline__stop" data-stop="4">
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <time class="timeline__date" datetime="2027-10">October 2027</time>
+            <h3 class="timeline__destination">Patagonia</h3>
+            <p class="timeline__highlights">Torres del Paine trek, estancia evenings, glacier calving</p>
+            <span class="timeline__availability timeline__availability--open">8 places available</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 10 — FINAL INVITATION -->
+    <section class="invitation" id="invitation" aria-label="Final invitation">
+      <div class="invitation__bg">
+        <div class="invitation__bg-layer invitation__bg-layer--1"></div>
+        <div class="invitation__bg-layer invitation__bg-layer--2"></div>
+        <div class="invitation__bg-layer invitation__bg-layer--3"></div>
+      </div>
+      <div class="invitation__content">
+        <h2 class="invitation__headline">The World Is Larger Than Your Routine</h2>
+        <p class="invitation__text">Join a community that travels with intention.</p>
+        <a href="mailto:membership@mavoro.uno" class="btn-gold btn-gold--large">Request Membership</a>
+      </div>
+      <footer class="site-footer">
+        <p class="site-footer__brand">Mavoro</p>
+        <p class="site-footer__copy">&copy; MMXXIV Mavoro Society. All journeys reserved.</p>
+        <nav class="site-footer__links" aria-label="Footer links">
+          <a href="mailto:membership@mavoro.uno">membership@mavoro.uno</a>
+          <a href="#opening">Privacy</a>
+          <a href="#opening">Terms</a>
+        </nav>
+      </footer>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
